@@ -82,7 +82,7 @@ DATABASES = {
         'USER': 'mohan_portfolio_db',
         'PASSWORD': 'Mon07m@n',
         'HOST': 'LOCALHOST',
-        'PORT': 5433
+        'PORT': 5432
 
     }
 }
