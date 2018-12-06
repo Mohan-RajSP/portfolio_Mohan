@@ -79,10 +79,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'portfolio_DB',
-        'USER': 'mohan_portfolio_db',
-        'PASSWORD': 'Mon07m@n',
+        'USER': 'postgres',
+        'PASSWORD': 'Dhanamsiva@0206',
         'HOST': 'LOCALHOST',
-        'PORT': 5432
+        'PORT': 5433
 
     }
 }
@@ -131,3 +131,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')   # creates a folder called "media"
 MEDIA_URL = '/media/'  # asub folder will be created under "/media/" like image, audio, video where the files wil be saved
 
+try:
+    from local_settings import *
+except ImportError:
+    pass
